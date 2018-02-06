@@ -1,0 +1,19 @@
+﻿<Page x:Class="MegaCardGame2000_WPF.Pages.Lose"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MegaCardGame2000_WPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="Lose" Background="#FF208489">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Foreground="White" HorizontalAlignment="Center" FontSize="72" FontFamily="Nirmala UI" FontWeight="Bold" Text="YOU LOSE" VerticalAlignment="Center"/>
+        <Button BorderThickness="8" Grid.Row="1" Width="250" Height="100" Content="RESTART" FontFamily="Nirmala UI" FontSize="36" FontWeight="Bold" BorderBrush="#FF124A4D" Foreground="#FF292929" Background="#FFD1D1D1" Click="Button_Click"/>
+    </Grid>    
+</Page>

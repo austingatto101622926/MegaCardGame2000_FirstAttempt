@@ -1,0 +1,43 @@
+﻿<Page x:Class="MegaCardGame2000_WPF.Pages.Battle"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MegaCardGame2000_WPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="CharacterCreation" Background="#FF208489">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.ColumnSpan="2" Grid.Row="0" Foreground="White" HorizontalAlignment="Center" FontSize="48" FontFamily="Nirmala UI" FontWeight="Bold" Text="BATTLE" VerticalAlignment="Center"/>
+
+        <TextBlock Name="OutputTurn" Grid.Column="0" Grid.Row="1" Foreground="White" HorizontalAlignment="Center" FontSize="36" FontFamily="Nirmala UI" FontWeight="Bold" Text="TURN" VerticalAlignment="Center"/>
+        <TextBlock Name="OutputEnemyCount"  Grid.Column="1" Grid.Row="1" Foreground="White" HorizontalAlignment="Center" FontSize="36" FontFamily="Nirmala UI" FontWeight="Bold" Text="ENEMYCOUNT" VerticalAlignment="Center"/>
+        
+        <StackPanel Grid.Column="0" Grid.Row="2">
+            <TextBlock Name="OutputPlayerName" Foreground="White" HorizontalAlignment="Center" FontSize="36" FontFamily="Nirmala UI" FontWeight="Bold" Text="PLAYER" VerticalAlignment="Center"/>
+            <TextBlock Name="OutputPlayerHealth" Foreground="White" HorizontalAlignment="Center" FontSize="36" FontFamily="Nirmala UI" FontWeight="Bold" Text="HEALTH" VerticalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="2">
+            <TextBlock Name="OutputEnemyType" Foreground="White" HorizontalAlignment="Center" FontSize="36" FontFamily="Nirmala UI" FontWeight="Bold" Text="ENEMY" VerticalAlignment="Center"/>
+            <TextBlock Name="OutputEnemyHealth" Foreground="White" HorizontalAlignment="Center" FontSize="36" FontFamily="Nirmala UI" FontWeight="Bold" Text="HEALTH" VerticalAlignment="Center"/>
+        </StackPanel>
+        
+        <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Center">
+            <Button Name="NormalAttack" Margin="20" BorderThickness="8" Grid.Row="1" Width="150" Height="75" Content="NORMAL" FontFamily="Nirmala UI" FontSize="24" FontWeight="Bold" BorderBrush="#FF124A4D" Foreground="#FF292929" Background="#FFD1D1D1" Click="NormalAttack_Click"/>
+            <Button Name="SpecialAttack" Margin="20" BorderThickness="8" Grid.Row="1" Width="150" Height="75" Content="SPECIAL" FontFamily="Nirmala UI" FontSize="24" FontWeight="Bold" BorderBrush="#FF124A4D" Foreground="#FF292929" Background="#FFD1D1D1" Click="SpecialAttack_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
+  
